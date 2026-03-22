@@ -23,7 +23,7 @@ graph TB
     subgraph Target["🟢 Target Layer - Ubuntu Server"]
         B[Target Server<br/>Ubuntu 22.04]
         B1[SSH Service<br/>Port 22]
-        B2[Authentication Logs<br/>/var/log/auth.log]
+        B2["Authentication Logs<br/>/var/log/auth.log"]
         B3[Test Accounts<br/>admin, rootbackup, testuser]
     end
     
