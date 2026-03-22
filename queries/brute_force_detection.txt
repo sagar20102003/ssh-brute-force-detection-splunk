@@ -1,0 +1,10 @@
+# Brute Force Detection Query
+# Detects IPs with >5 failed attempts in 5 minutes
+# Use this for alerting in Splunk
+
+index=ssh_bruteforce "Failed password" 
+| bucket _time span=5m 
+| stats count as failed_attempts by src_ip, _time 
+| where failed_attempts > 5
+| sort - failed_attempts
+| table _time, src_ip, failed_attempts

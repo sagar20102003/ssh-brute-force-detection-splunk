@@ -1,0 +1,9 @@
+# Top Attacker IPs
+# Shows the most active attacking IP addresses
+
+index=ssh_bruteforce "Failed password" 
+| rex "from (?<src_ip>\d+\.\d+\.\d+\.\d+)" 
+| stats count as attempts by src_ip 
+| sort - attempts 
+| head 10
+| table src_ip, attempts

@@ -1,0 +1,10 @@
+# Successful Breach Detection
+# Finds attackers who failed multiple times then succeeded
+
+index=ssh_bruteforce 
+| transaction src_ip maxspan=10m 
+| where mvcount('Failed password') > 3 AND mvcount('Accepted password') > 0
+| eval failed_count = mvcount('Failed password')
+| eval success_count = mvcount('Accepted password')
+| table src_ip, _time, failed_count, success_count
+| sort - failed_count
