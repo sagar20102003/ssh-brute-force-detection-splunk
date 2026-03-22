@@ -347,3 +347,7 @@ sudo /opt/splunk/bin/splunk list monitor -auth admin:password
 | Ubuntu Admin | admin | Password123 |
 | Ubuntu Test | testuser | testpass |
 | Ubuntu Backup | rootbackup | Welcome1 |
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
