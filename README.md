@@ -127,6 +127,14 @@ This demonstrates the system's ability to:
 
 *Launching a brute force attack from Kali Linux using Hydra. The attack successfully discovers the admin password `Password123`, demonstrating a realistic attack scenario.*
 
+### Splunk Alerts Configuration
+![Alerts](screenshots/alert-configuration.png)
+*Automated alerts configured for brute force and successful breach detection*
+
+### Raw Authentication Logs
+![Auth Logs](screenshots/auth-logs.png)
+*Ubuntu /var/log/auth.log showing failed password attempts*
+
 ## 🚀 Installation & Setup Guide
 
 ### Prerequisites
