@@ -103,6 +103,23 @@ graph TB
 | Successful Breach | Failures then success in 10 mins | Critical alert |
 | High Volume Attack | >50 attempts in 1 minute | High severity alert |
 
+## 📸 Screenshots
+
+### Real-time SSH Brute Force Detection in Action
+
+![SSH Brute Force Monitor Dashboard](screenshots/dashboard-attack.png)
+
+*Splunk dashboard successfully detecting a brute force attack:*
+- **Attack Spike:** Up to **15 failed login attempts** detected
+- **Attacker IP:** `10.170.143.71` identified
+- **Targeted Account:** `admin` account under attack
+- **Timeline:** Multiple attack spikes visible across monitoring period
+
+This demonstrates the system's ability to:
+1. Detect brute force attempts in real-time
+2. Identify attacking IP addresses
+3. Track targeted user accounts
+4. Visualize attack patterns over time
 
 ## 🚀 Installation & Setup Guide
 
