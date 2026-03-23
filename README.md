@@ -121,6 +121,12 @@ This demonstrates the system's ability to:
 3. Track targeted user accounts
 4. Visualize attack patterns over time
 
+### Hydra Brute Force Attack Simulation
+
+![Hydra Attack](screenshots/attack-hydra.png)
+
+*Launching a brute force attack from Kali Linux using Hydra. The attack successfully discovers the admin password `Password123`, demonstrating a realistic attack scenario.*
+
 ## 🚀 Installation & Setup Guide
 
 ### Prerequisites
